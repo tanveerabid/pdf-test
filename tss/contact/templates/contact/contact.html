@@ -1,0 +1,134 @@
+{% extends 'base/base.html' %}
+{% block content %}
+
+<section class="contact-banner-area relative">
+<div class="overlay overlay-bg"></div>
+<div class="container">
+<div class="row d-flex align-items-center justify-content-center">
+<div class="about-content col-lg-12" >
+
+    <br/><br/><br/><br/>
+<p class="text-white navlink"><a href="{% url 'home' %}">Home </a> <span class="lnr lnr-arrow-right"></span> <a href="{% url 'contact' %}"> Contact Us</a></p>
+</div>
+</div>
+</div>
+</section>
+
+   
+
+<section class="contact-page-area section-gap">
+    <div class="container">
+        {% if offices %}
+            <h1 class="text-center" style="text-transform: uppercase;">Our Network</h1>
+        
+        <div class="row">
+            {% for office in offices %}
+            <div class="col-lg-4">
+                <div class="single-service">
+                    <address>
+                    <div class="detail">
+                {% if office.office_code == 'HD-ISB' %}
+                    <h4 style="text-transform: uppercase;">Head Office</h4>
+                {% else %}
+                    <h4 style="text-transform: uppercase;">{{ office.office_city }} OFFICE</h4>
+                {% endif %}
+                        
+                        <div class="contact-details">
+                        <p style="text-transform: uppercase; text-align: justify;"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;{{ office.address }}, {{ office.tehsil }}. {{ office.post_code }}.</p>
+                        </div>
+
+                        <div class="contact-details">
+                        <p style="text-transform: uppercase; text-align: justify;"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+92-{{ office.phone_area_code }}-{{ office.phone_num }}</p>
+                        </div>
+
+                        <div class="contact-details">
+                        <p style="text-transform:uppercase; text-align: justify;"><i class="fa-solid fa-business-time"></i>&nbsp;&nbsp;{{ office.week_start_day }} to {{ office.week_end_day }} ({{ office.opening_time }} to {{ office.closing_time }}){{ office.break_day }} Break:({{ office.friday_break_start }} to {{ office.friday_break_end }})</p>
+                        </div>
+
+                        <div class="contact-details">
+                        <p><a style="color: black;" href="mailto:admin&#64;tss.org.pk"><i class="fa-solid fa-at"></i>&nbsp;&nbsp;{{ office.email }}</a></p>
+                        </div>
+                    </div>
+                    </address>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="container">
+        <iframe src="https://www.google.com/maps/d/embed?mid=18GrEhk2QaLUZwNoBwMBHOH8yxu1uTTfS&ehbc=2E312F" class="map-wrap" style="width:100%; height: 445px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    
+            <!-- START CONTACT SECTION -->
+    <div class="container">
+        
+        <div class="section-contact">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-8">
+                    <div class="header-section text-center">
+                        <h2 class="title">Get In Touch
+                            <span class="dot"></span>
+                            <span class="big-title">CONTACT</span>
+                        </h2>
+                        <p class="description">Let us know about your queries and suggestions. It would be great to hear you.</p>
+                        <small style="font-weight: 600;color: red;" class="error"></small>
+                        <small style="font-weight: 600;color: green;" class="success"></small>
+                    </div>
+                </div>
+            </div>
+            <div class="form-contact">
+                <form enctype="multipart/form-data" method="POST" action="" >
+                        {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="single-input">
+                                <i class="fas fa-user"></i>
+                                <input type="text" name="name" id="name" placeholder="ENTER YOUR NAME" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-input">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" name="email" id="email" placeholder="ENTER YOUR EMAIL" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-input">
+                                <i class="fas fa-phone"></i>
+                                <input type="text" name="phone" id="phone" placeholder="ENTER YOUR PHONE NUMBER" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-input">
+                                <i class="fas fa-check"></i>
+                                <input type="text" name="subject" id="subject" placeholder="ENTER YOUR SUBJECT" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="single-input">
+                                <i class="fas fa-comment-dots"></i>
+                                <textarea placeholder="ENTER YOUR MESSAGE" id="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+
+                            <div class="text-center">
+                               <input type="button" class="primary-btn text-uppercase" id="clear" name="clear" value="CLEAR">
+                               <input type="submit" class="primary-btn text-uppercase" id="submit" name="submit" value="SUBMIT">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+{% endblock content %}

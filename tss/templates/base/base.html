@@ -1,0 +1,518 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="shortcut icon" href="{% static 'front/image/2022-Black.png'%}">
+
+<meta name="author" content="codepixer">
+
+<meta name="description" content="">
+
+<meta name="keywords" content="">
+
+<meta charset="UTF-8">
+    {% if title %}
+    <title>Tight Security Services Pvt Ltd - {{ title }}</title>
+    {% else %}
+    <title>Tight Security Services Pvt Ltd</title>
+    {% endif %}
+<!--   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="{% static 'front/css/linearicons.css'%}">
+<link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{% static 'front/css/bootstrap.css'%}">
+<link rel="stylesheet" href="{% static 'front/css/magnific-popup.css'%}">
+<link rel="stylesheet" href="{% static 'front/css/nice-select.css'%}">
+<link rel="stylesheet" href="{% static 'front/css/animate.css'%}">
+<link rel="stylesheet" href="{% static 'front/css/owl.carousel.css'%}">
+<link rel="stylesheet" href="{% static 'front/css/main.css'%}"> 
+
+
+
+<!--[if lt IE 9]>
+<script src="{% static 'front/js/html5shiv.min.js'%}"></script>
+<script src="{% static 'front/js/respond.min.js'%}"></script>
+<![endif]-->
+<!-- <style type="text/css">
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: left;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+
+
+.section-contact .header-section .title {
+  position: relative;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.section-contact .header-section .title .dot {
+    display: inline-block;
+  position: absolute;
+    bottom: 8px;
+    width: 8px;
+    height: 8px;
+    margin-left: 3px;
+    background-color: #df383f;
+}
+
+.section-contact .header-section .description {
+  font-family: "Roboto", sans-serif;
+  color: #2a6287;
+}
+
+.section-contact .header-section .big-title {
+  position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%,70%);
+    font-size: 120px;
+    font-weight: 700;
+    opacity: 0.15;
+}
+
+.section-contact .form-contact {
+
+
+}
+
+.section-contact .form-contact .single-input {
+  position: relative;
+    margin-top: 40px;
+}
+
+.section-contact .form-contact .single-input i {
+  position: absolute;
+    top: 5px;
+    left: 15px;
+    color: #de3842;
+}
+
+.section-contact .form-contact .single-input input,
+.section-contact .form-contact .single-input textarea {
+  width: 100%;
+    border: none;
+    border-bottom: 2px solid #07395c;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: border .3s;
+}
+
+.section-contact .form-contact .single-input input::placeholder,
+.section-contact .form-contact .single-input textarea::placeholder {
+  color: rgba(7, 57, 92, .3);
+}
+
+.section-contact .form-contact .single-input input:focus,
+.section-contact .form-contact .single-input textarea:focus {
+  border-color: #df383f;
+}
+
+.section-contact .form-contact .single-input textarea {
+  height: 150px;
+  min-height: 50px;
+}
+
+.section-contact .form-contact .submit-input input {
+  margin-top: 40px;
+    padding: 15px 50px;
+    background-color: #de3842;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    transition: background-color .3s;
+}
+
+.section-contact .form-contact .submit-input input:hover {
+  background-color: #07395c;
+}
+
+@media (max-width: 575.99px) {
+  .section-contact {
+      padding: 80px 60px;
+  }
+
+  .section-contact .header-section .title {
+      font-size: 40px;
+  }
+
+  .section-contact .header-section .big-title {
+    font-size: 80px;
+  }
+
+  .section-contact .header-section .description {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .section-contact {
+      padding: 80px 60px;
+  }
+
+  .section-contact .header-section .title {
+      font-size: 45px;
+  }
+
+  .section-contact .header-section .big-title {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .section-contact {
+      padding: 80px 60px;
+  }
+
+  .section-contact .header-section .title {
+      font-size: 45px;
+  }
+
+  .section-contact .header-section .big-title {
+    font-size: 100px;
+  }
+}
+
+
+
+    .photo-grid {
+  display: grid;
+  gap: 1rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+#logo1 {
+  height:90px;
+  width: 110px;
+}
+
+/* Medium screens */
+@media screen and (max-width: 600px) {
+  .card-tall {
+    background-size: cover;
+    grid-row: span 2 / auto;
+  }
+
+  .card-wide {
+    grid-column: span 2 / auto;
+  }
+   #logo1 {
+  height:60px;
+  width: 50px;
+}
+
+}
+
+#arrow-straight { 
+  visibility: visible;
+}
+#arrow-down { 
+  visibility: hidden;
+   }
+@media (max-width: 720px) {
+  #logo1 {
+  height:60px;
+  width: 50px;
+}
+  #arrow-straight { 
+    visibility: hidden;
+  }
+  #arrow-down {
+   visibility: visible;
+ } 
+}
+
+
+
+
+</style> -->
+</head>
+<body>
+<!--     <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a> -->
+  <div class="container">
+<header style="background: green; opacity: .9;" id="header">
+<div class="container header-top">
+<div class="row">
+<div class="col-6 top-head-left">
+<ul>
+<li><a id="navlink" href="https://www.facebook.com/tsspkofficial" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+<li><a id="navlink" href="https://wa.me/923004288437?text=Hi, %20I'm%20interested%20in%20your%20services" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+<li><a id="navlink" href="https://www.instagram.com/tss_pvt_ltd/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+<li><a id="navlink" href="https://twitter.com/tss_pvt_ltd" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a id="navlink" href="https://www.linkedin.com/company/tsspk" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+</ul>
+</div>
+<div class="col-6 top-head-right">
+<ul>
+<li><a id="navlink" href="tel:+92 051 2716 173"><i class="fa fa-phone" aria-hidden="true"></i><span> +92-51-2321991</span> </a></li>
+<li style="color: black; font: 12px;">| 9am - 5pm(Mon-Fri)</li>
+<!-- <li><a id="navlink" href="#">Register </a>|<a id="navlink" href="#"> Login</a></li> -->
+</ul>
+</div>
+</div>
+<hr style="background-color: #fab700;">
+</div>
+<div class="container header-bottom">
+<div class="row align-items-center justify-content-between d-flex">
+<div id="logo">
+<img src="{% static 'front/image/2022-Black.png'%}" alt="Company Logo" title="LOGO" />
+<h1>Tight security Services</h1>
+</div>
+<div id="nav-menu-icon"></div>
+<nav id="nav-menu-container">
+<ul class="nav-menu" >
+<li class="menu-active"><a id="navlink" href="{% url 'home' %}">Home</a></li>
+<!-- <li class="menu-has-children"><a id="navlink"  href="{% url 'services' %}">Services</a>
+<ul> -->
+<li><a id="navlink" href="{% url 'services' %}">Services</a></li>
+<!-- <li><a id="navlink"  href="#technical">Technical Security</a></li>
+<li><a id="navlink"  href="#residential">RESIDENTIAL|HOME SECURITY</a></li>
+</ul>
+</li> -->
+<li><a id="navlink"  href="{% url 'team' %}">Our Team</a></li>
+<li><a id="navlink"  href="{% url 'about' %}">About Us</a></li>
+<li><a id="navlink"  href="{% url 'contact' %}">Contact Us</a></li>
+<li><a id="navlink"  href="{% url 'news' %}">News</a></li>
+<li><a id="navlink"  href="{% url 'verify' %}">Verification</a></li>
+<!-- <li class="menu-has-children" --><li><a id="navlink"  href="{% url 'download' %}">Downloads</a>
+<!-- <ul>
+<li><a id="navlink"  href="front-single">front Single</a></li>
+<li><a id="navlink"  href="elements">Elements</a></li>
+</ul> -->
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+
+
+
+{% block content %}{% endblock %}
+
+<div class="modal"><!-- Place at bottom of page --></div>
+<!-- <footer class="footer-area ">
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-md-6 col-sm-6">
+<div class="single-footer-widget">
+<h6>About Us</h6>
+<p>
+TSS provides a complete security solution to secure your loved ones and wealth. TSS offers vide range of security solutions for enterprises and individuals according to their needs.
+</p>
+
+</div>
+</div> -->
+<!-- <div class="col-lg-5  col-md-6 col-sm-6">
+<div class="single-footer-widget">
+<h6>Newsletter</h6>
+<p>Stay update with our latest news</p>
+<p class="subsuccess"></p>
+<div class="" >
+   <form enctype="multipart/form-data" method="POST" action="" class="form-inline">
+    {% csrf_token %}
+    <input class="form-control" type="email" name="subscribe-email" id="subscribe-email" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required>
+
+    <button type="submit" class="click-btn btn btn-default" id="subscribe" name="submit"><span class="lnr lnr-arrow-right"></span></button>
+</form>
+</div>
+</div>
+</div> -->
+<!-- <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+<div class="single-footer-widget">
+<h6>Follow Us</h6>
+<p>Let us be social</p>
+<div class="footer-social d-flex align-items-center">
+<a id="navlink2" href="https://www.facebook.com/tsspkofficial"><i id="navlink2" class="fa-brands fa-facebook-f"></i></a>
+<a id="navlink2" href="https://wa.me/923004288437?text=Hi, %20I'm%20interested%20in%20your%20services"><i class="fa-brands fa-whatsapp"></i></a>
+<a id="navlink2" href="https://www.instagram.com/tss_pvt_ltd/"><i  class="fa-brands fa-instagram"></i></a>
+<a id="navlink2" href="https://twitter.com/tss_pvt_ltd"><i class="fa-brands fa-twitter"></i></a>
+<a id="navlink2" href="https://www.linkedin.com/company/tsspk"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+</div>
+</div>
+
+<div class="col-lg-12 col-md-6 col-sm-6 social-widget">
+<div class="single-footer-widget">
+  <hr style="background-color: #fab700;">
+<p class="footer-text" style="text-align: center;">
+
+Copyright &copy;2006-<script>document.write(new Date().getFullYear());</script> Tight Security Services (Pvt) Ltd. All rights reserved | Designed & Developed with <i style="color: red;" class="fa-solid fa-heart"></i> by <a href="#" target="_blank">Shamim IT Solution (Pvt) Ltd</a>
+</p>
+
+</div>
+</div>
+
+</div>
+
+
+
+</div>
+</footer> -->
+<footer id="footer">
+  <div class="footer_top">
+    <div class="row">
+      <div class="col-lg-1 col-md-1 col-sm-1"> </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="footer_widget wow fadeInDown">
+          <h2>Tag</h2>
+          <ul class="tag_nav">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2"> </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <div class="footer_widget wow fadeInRightBig">
+        
+        <h2>
+        Contact</h2>
+        <address>
+          <div class="contact-details">
+              <p style="text-transform: uppercase; text-align: justify;"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;2nd Floor, Islamabad Mall Plaza, Opp. PSO Filling Station, Barakahu, Murree Road, Islamabad. 45400.</p>
+          </div>
+          <div class="contact-details">
+              <p style="text-transform: uppercase; text-align: justify;"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+92-(0)51-2321991</p>
+          </div>
+          <div class="contact-details">
+              <p><a class="navlink" href="mailto:admin&#64;tss.org.pk"><i class="fa-solid fa-at"></i>&nbsp;&nbsp;admin@tss.org.pk</a></p>
+          </div>
+        </address>
+      </div>
+    </div>
+    <div class="col-lg-1 col-md-1 col-sm-1"> </div>
+  </div>
+   <hr style="background-color: #fab700;">
+</div>
+<div class="footer_bottom">
+  <p class="copyright">Copyright&copy;2006-<script>document.write(new Date().getFullYear());</script> <a href="#">Tight Security Services (Pvt) Ltd.</a></p>
+  <p class="developer">Designed & Developed with <i style="color: red;" class="fa-solid fa-heart"></i> by <a href="#" target="_blank">Shamim IT Solution (Pvt) Ltd</a></p>
+</div>
+</footer>
+
+</div>
+<script type="text/javascript">
+window.onbeforeunload = function () {
+    window.scrollTo(0,0);
+};
+</script>
+
+
+
+
+<script src="{% static 'front/js/jquery-2.2.4.min.js'%}"></script>
+<script src="{% static 'front/js/bootstrap.min.js'%}"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+<script src="{% static 'front/js/superfish.min.js'%}"></script>
+<script src="{% static 'front/js/popup.js'%}"></script>
+ 
+<script src="{% static 'front/js/main.js'%}"></script>
+<script src="{% static 'front/js/conatcform.js'%}"></script>
+<script src="{% static 'front/js/jquery.li-scroller.1.0.js'%}"></script> 
+<script src="{% static 'front/js/wow.min.js'%}"></script>  
+<script src="{% static 'front/js/slick.min.js'%}"></script>  
+<script src="{% static 'front/js/jquery.newsTicker.min.js'%}"></script> 
+<script src="{% static 'front/js/jquery.fancybox.pack.js'%}"></script> 
+
+
+</body>
+</html>

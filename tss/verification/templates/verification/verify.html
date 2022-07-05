@@ -1,0 +1,50 @@
+{% extends 'base/base.html' %}
+{% block content %}
+
+
+<section class="verify-banner-area relative">
+<div class="overlay overlay-bg"></div>
+<div class="container">
+<div class="row d-flex align-items-center justify-content-center">
+<div class="about-content col-lg-12" >
+    <br/><br/><br/><br/>
+
+<p class="text-white navlink"><a href="{% url 'home' %}">Home </a> <span class="lnr lnr-arrow-right"></span> <a href="{% url 'verify' %}"> Verification</a></p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="contact-page-area section-gap">
+<div class="container">
+    <h1 style="margin-top: 20; text-align: center;">Coming Soon</h1>
+<!-- <div class="row">
+    
+<div class="col-lg-4 d-flex flex-column address-wrap">
+<div class="single-contact-address d-flex flex-row">
+<div class="contact-details">
+<h6><i style="color:red;" class="fa-solid fa-certificate"></i>&nbsp;Verify An Employee By CNIC
+    <i id="arrow-straight"  class="fa-solid fa-arrow-right"></i><i id="arrow-down"  class="fa-solid fa-arrow-down"></i></h6>
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+<form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
+<div class="row">
+<div class="col-lg-6 form-group">
+<input name="name" placeholder="6110193546209" onfocus="this.placeholder=''" onblur="this.placeholder='6110193546209'" class="common-input mb-20 form-control" type="text" maxlength="13" required="true">
+
+
+<div class="mt-20 alert-msg" style="text-align: left;"></div>
+</div>
+<div class="col-lg-6 form-group">
+<button class="primary-btn  text-white" style="float: right;">Verify</button>
+</div>
+</div>
+</form>
+</div>
+</div> -->
+</div>
+</section>
+
+{% endblock content %}

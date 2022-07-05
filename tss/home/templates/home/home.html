@@ -1,0 +1,250 @@
+{% extends 'base/base.html' %}
+{% block content %}
+{% load static %}
+<section class="banner-area relative" id="home">
+<div class="overlay overlay-bg"></div>
+<div class="container">
+
+	<div class="row">
+
+<div class="col-lg-8 m-4 p-2">
+<div class="single-service op-5">
+<div class="detail">
+<a href="{% url 'services' %}#residential"><h4 style="text-transform:uppercase;">RESIDENTIAL/HOME SECURITY</h4></a>
+<p style="text-align: justify;">
+Our experts can assist you in choosing a customized, secure and reliable home security system which is, user-friendly with special features to meet all your safety needs. 
+</p>
+<p style="text-align:right;"><a class="navlink" href="{% url 'services' %}#residential">Learn More <span class="lnr lnr-arrow-right"></span></a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- <div class="banner-content col-lg-9">
+
+
+<h6 class="text-white"></h6>
+<h1 class="text-white">
+
+</h1>
+<p class="pt-20 pb-20 text-white">
+
+</p>
+<a style="text-decoration: none;" href="#" class="primary-btn text-uppercase">Get a Quote</a>
+</div> -->
+
+</div>
+</section>
+
+
+<section class="service-area section-gap" id="service">
+<div class="container">
+<div class="row d-flex justify-content-center">
+<div class="menu-content pb-70 col-lg-8">
+<div class="title text-center">
+<h1 class="mb-10">Our Offered Service Categories</h1>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-4">
+<div class="single-service">
+<div class="thumb">
+<img class="img-fluid" src="{% static 'front/img/guards.jpg' %}" width="100%" alt="">
+</div>
+<div class="detail">
+<a href="{% url 'services' %}#security"><h4 style="text-transform:uppercase;">Security services</h4></a>
+<p style="text-align: justify;">
+We offer customized integrated security service to suit the diverse and unique needs of our clients. Including Security Guards / Personal, Close Protection, Event Security & Consultancy Services.
+</ul>
+</p>
+<p style="text-align:right;"><a class="navlink" href="{% url 'services' %}#security">Learn More <span class="lnr lnr-arrow-right"></span></a></p>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="single-service">
+<div class="thumb">
+<img class="img-fluid" src="{% static 'front/img/rfid-r.jpg'%}" width="100%" alt="">
+</div>
+<div class="detail">
+<a href="{% url 'services' %}#technical"><h4 style="text-transform:uppercase;">technical security</h4></a>
+<p style="text-align: justify;">
+	 With extensive and unparalleled experience in system integration, we design, implement, monitor & maintain robust technical security systems for commercial, industrial, public & private sectors.
+</p>
+<p style="text-align:right;"><a class="navlink" href="{% url 'services' %}#technical">Learn More <span class="lnr lnr-arrow-right"></span></a></p>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="single-service">
+<div class="thumb">
+<img class="img-fluid" src="{% static 'front/img/homesec-r.png'%}" alt="">
+</div>
+<div class="detail">
+<a href="{% url 'services' %}#residential"><h4 style="text-transform:uppercase;">RESIDENTIAL/HOME SECURITY</h4></a>
+<p style="text-align: justify;">
+Our experts can assist you in choosing a customized, secure and reliable home security system which is, user-friendly with special features to meet all your safety needs. 
+</p>
+<p style="text-align:right;"><a class="navlink" href="{% url 'services' %}#residential">Learn More <span class="lnr lnr-arrow-right"></span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="feature-area section-gap" id="feature">
+<div class="container">
+<div class="row d-flex justify-content-center">
+<div class="col-md-8 pb-40 header-text">
+<h1>Some Features that Made us Unique</h1>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-4 col-md-6">
+<div class="single-feature">
+		<div class="thumb">
+		<img class="img-fluid" src="{% static 'front/image/features/et1.jpg'%}" alt="">
+		</div>
+		<h4><span class="lnr lnr-user"></span>Expert Technicians</h4>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="single-feature">
+		<div class="thumb">
+		<img class="img-fluid" src="{% static 'front/image/features/ps1.jpg'%}" alt="">
+		</div>
+		<h4><span class="lnr lnr-license"></span>Professional Service</h4>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="single-feature">
+		<div class="thumb">
+		<img class="img-fluid" src="{% static 'front/image/features/support1.jpg'%}" alt="">
+		</div>
+		<h4><span class="lnr lnr-phone"></span>Great Support</h4>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="single-feature">
+		<div class="thumb">
+		<img class="img-fluid" src="{% static 'front/image/features/ts1.png'%}" alt="">
+		</div>
+		<h4><span class="lnr lnr-rocket"></span>Technical Skills</h4>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="single-feature">
+		<div class="thumb">
+		<img class="img-fluid" src="{% static 'front/image/features/reccomm1.jpg'%}" alt="">
+		</div>
+		<h4><span class="lnr lnr-diamond"></span>Highly Recomended</h4>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="single-feature">
+		<div class="thumb">
+		<img class="img-fluid" src="{% static 'front/image/features/pr1.jpg'%}" alt="">
+		</div>
+		<h4><span class="lnr lnr-bubble"></span>Positive Reviews</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="facts-area section-gap">
+<div class="container">
+<div class="row">
+
+<div class="col-lg-4 mt-10">
+<h1 class="counter" style="text-align: center;">2536</h1>
+<p style="text-align: center;">Projects Completed</p>
+</div>
+<div class="col-lg-4 mt-20">
+<h1 class="counter" style="text-align: center;">6784</h1>
+<p style="text-align: center;">Served Clients</p>
+</div>
+
+<div class="col-lg-4 mt-20">
+<h1 class="counter" style="text-align: center;">435</h1>
+<p style="text-align: center;">In House Professionals</p>
+</div>
+
+</div>
+</section>
+
+
+<section class="galery-area section-gap" id="gallery">
+<div class="container">
+<div class="row d-flex justify-content-center">
+<div class="menu-content pb-70 col-lg-8">
+<div class="title text-center">
+<h1 class="mb-10">Latest From Our Gallery</h1>
+<p>It is good to show the world what we have and what we can do.</p>
+</div>
+</div>
+</div>
+	<div class="photo-grid">
+      	<div class="card card-tall">    	
+			<img style="width: 100%; height: 100%; object-fit:cover;" src="{% static 'front/img/g4.jpg'%}">
+      	</div>
+  		<div class="card ">
+  			<img style="width: 100%; height: 100%; object-fit:cover;" src="{% static 'front/img/g2.jpg'%}">
+  		</div>
+  		<div class="card ">
+  			<img style="width: 100%; height: 100%; object-fit:cover;" src="{% static 'front/img/g3.jpg'%}">
+  		</div>
+      	<div class="card card-wide">
+      		<img style="width: 100%; height: 100%; object-fit:cover;" src="{% static 'front/img/g1.jpg'%}">
+      	</div>
+      	<div class="card">
+      		<img style="width: 100%; height: 100%; object-fit:cover;" src="{% static 'front/img/g5.jpg'%}">
+      	</div>
+
+  
+</div>
+</div>
+</section>
+
+
+<section class="blog-area section-gap" id="blog">
+
+<div class="container">
+
+<div class="row d-flex justify-content-center">
+<div class="menu-content pb-70 col-lg-8">
+<div class="title text-center">
+<h1 class="mb-10">Be Socialized with us</h1>
+<p>Get the latest update by following us on social media. Click on Icons on top or Bottom of the page to visit on desired platform.</p>
+</div>
+</div>
+</div>
+
+<div style=" display: flex; flex-wrap: wrap;justify-content: center;">
+
+
+
+<!-- 	<div style="width: 100%; flex: 1 1 450px;margin: 0px;" class="fb-page" data-href="https://www.facebook.com/tsspkofficial/" data-tabs="timeline, events, messages" data-width="900px" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/tsspkofficial/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tsspkofficial/">Tight Security Services Private Limited</a></blockquote></div> -->
+
+<!-- 	<div style=" flex: 1 1 450px;margin: 5px;" >
+		<a class="twitter-timeline" href="https://twitter.com/tss_pvt_ltd?ref_src=twsrc%5Etfw"  data-width="100%"
+  		data-height="450">Tweets by tss_pvt_ltd
+		<a href="https://twitter.com/tss_pvt_ltd?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @tss_pvt_ltd</a></a> 
+	
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div> -->
+              
+
+</div>
+
+
+</div>
+
+</section>
+
+{% endblock content %}
+

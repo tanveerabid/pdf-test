@@ -1,0 +1,74 @@
+{% extends 'base/base.html' %}
+{% block content %}
+{% load static %}
+
+
+
+
+<section class="about-banner-area relative">
+<div class="overlay overlay-bg"></div>
+<div class="container">
+<div class="row d-flex align-items-center justify-content-center">
+<div class="about-content col-lg-12" >
+    <br/><br/><br/><br/>
+
+<p class="text-white navlink"><a href="{% url 'home' %}">Home </a> <span class="lnr lnr-arrow-right"></span> <a href="{% url 'about' %}"> About Us</a></p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="about-top-area section-gap">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-12 ">
+<h3 style="text-align:center;">Ceo Message</h3><br/>
+</div>
+
+<div class="col-lg-6 about-top-left">
+
+<blockquote class="generic-blockquote"><p style="text-align: justify;"><q>At Tight Security Services (Pvt) Ltd, being part of a highly trained & dedicated team of professional is an honor. As we believe, Business is all about Trust, Responsibility & Willingness. Willingness to serve people with our best standards. We be always ready to learn, listen & improve from our mistakes & our client's feedback. We, At TSS, are committed to implement integrated security measures for security and protection of our clients & their wealth at any cost. Likewise, we earned our reputation through hard work & unwavering commitment to put our client's needs first & we always keep doing that.</q></p>
+    <br/><br/><span>Ch Abid Hussain</span><br/><small>(President/CEO)</small>
+</blockquote>
+
+</div>
+<div class="col-lg-6 about-top-right">
+<img class="img-fluid" style="width:100%;" src="{% static 'front/img/ceo.png' %}" alt="CEO-TSS">
+</div>
+</div>
+
+
+    <div class="row align-items-center">
+        <div class="col-lg-12 ">
+           <br/><br/><br/><br/> <h3 style="text-align:center;">Who We Are</h3><br/>
+        </div>
+        <div class="col-lg-6 about-top-left">
+            <img class="img-fluid" style="width:100%;" src="{% static 'front/img/g7.jpg' %}" alt="">
+            <img class="img-fluid" style="width:100%;" src="{% static 'front/img/g7.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-6 about-top-right">
+
+            <blockquote class="generic-blockquote"><p style="text-align: justify;"><q>At Tight Security Services (Pvt) Ltd, being part of a highly trained & dedicated team of professional is an honor. As we believe, Business is all about Trust, Responsibility & Willingness. Willingness to serve people with our best standards. We be always ready to learn, listen & improve from our mistakes & our client's feedback. We, At TSS, are committed to implement integrated security measures for security and protection of our clients & their wealth at any cost. Likewise, we earned our reputation through hard work & unwavering commitment to put our client's needs first & we always keep doing that.</q></p>
+    <br/><br/><span>Ch Abid Hussain</span><br/><small>(President/CEO)</small>
+</blockquote>
+
+            <p style="text-align: justify;">
+            Tight security Services (Pvt) Ltd, having NOC from Ministry of Interior is registered under Companies Ordinance 1984(Companies act 2017) with SECP since 2006. 
+            </p>
+            <p style="text-align: justify;">
+            Right after its incorporation, the company also obtained NOC from the provincial authorities of Punjab under the PPSC (regulations & control Ordinance 2002). 
+            </p>
+            <p style="text-align: justify;">
+            The company achieved another milestone in 2015, when NOC of Federal Administration of Islamabad ICT is issued to the company. Since then the company is fully operational in both Punjab and ICT Islamabad.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+
+
+{% endblock content %}

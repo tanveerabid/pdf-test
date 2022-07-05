@@ -1,0 +1,166 @@
+
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" type="image/jpg" href="image/logo3.png" />
+	<title>TIGHT SECURITY SERVICES PRIVATE LIMITED</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+body {
+    margin:0;
+    font-family:Arial
+    }
+body {
+  background-image: url('image/key.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+* {box-sizing: border-box;margin: 0px; padding: 0px; }
+
+form .content {
+	width: 50%;
+	margin: 50px auto;
+	padding: 20px;
+	border: 1px solid #B0C4DE;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+}
+form {
+    width: 50%;
+    margin: 0px auto;
+    text-align: left;
+    padding: 20px; 
+ 
+    border-radius: 5px;
+}
+@media screen and (max-width: 600px) {
+	
+	form {
+    width: 100%;
+
+}
+
+}
+	
+.input-group {
+	margin: 10px 0px 10px 0px;
+}
+.input-group label {
+	display: block;
+	text-align: left;
+	margin: 3px;
+}
+.input-group input {
+    background-color: transparent;
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+.input-group .btn{
+    width: 70px;
+	float: center;
+	padding: 10px;
+	font-size: 16px;
+	color: white;
+	background: #003366;
+	border: none;
+	border-radius: 5px;
+    cursor: pointer;
+}
+.error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+
+.header{
+	width: 80%;
+    height: 80px;
+	margin: 70px auto 0px;
+	color: white;
+
+	text-align: center;
+
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+	padding: 20px;
+
+}
+.logo{
+margin-left: 250px;
+
+}
+.logo a{
+float: left;
+}
+
+@media screen and (max-width: 600px) {
+    .header{
+	width: 100%;
+	margin: 50px auto 0px;
+	color: white;
+
+	text-align: center;
+
+	border-bottom: none;
+
+	padding: 20px;
+
+}
+.logo{
+margin-left: 5px;
+
+}
+form {
+    width: 80%;
+
+}
+@media screen and (max-width: 600px) {
+	
+	form {
+    width: 100%;
+
+}
+	
+}
+	</style>
+</head>
+<body>
+
+<div class="logo" >
+					<a href="index.php"><img src="image/lg1.png" alt="logo" style="width:70%; height: 70%; "></a>
+				</div>
+	<div class="header"> 
+		<h2 style="color: #003366;">TSS-SSMS</h2>
+	</div>
+	<form method="post" action="">
+	    <input type="hidden" name="mode" value="login" >
+	    	    
+		<div class="input-group">
+			<label>Username</label>
+			<input type="text" name="username" required>
+		</div><br>
+		<div class="input-group">
+			<label>Password</label>
+			<input type="password" name="password" required>
+		</div><br><br>
+		<div class="input-group">
+			<button type="submit" class="btn" >Login</button>
+		</div>
+
+	</form>
+</body>
+</html>
+
+
